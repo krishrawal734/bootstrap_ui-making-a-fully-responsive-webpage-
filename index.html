@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!--bootstrao-link-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"/>
+<!--css linl-->
+<link rel="stylesheet" href="./css/style.css"/>
+
+</head>
+
+<body>
+  <!--navbar-->
+  <nav class="navbar navbar-expand-lg bg-dark ">
+    <div class="container"> <a class="navbar-brand fw-bold  text-white" href="#">Brainwave.io</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mx-auto  ">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="#">Demos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white" href="#">Pages</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active text-white ">Contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active text-white" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Support
+            </a>
+            <ul class="dropdown-menu ">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+
+
+
+
+
+        <form class="d-flex" role="search">
+
+          <button class="btn btn-outline-primary" type="submit">Get statred a project</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+
+
+
+
+
+    <!--hero-part-->
+    <section class="hero-section my-5">
+      <!--left side-->
+      <div class="col-lg-6 hero-text">
+        <p class="text-danger fw-bold">Get shift your business</p>
+        <h1>Get things done by awesome remote team</h1>
+        <p>
+          We share common trends and strategies for improving <br> your rental income and making sure you stay in high
+          demand</p>
+        <button type="button" class="btn btn-primary btn btn-outline-dark text-white">Get started a project</button>
+      </div>
+
+      <!--right part-->
+      <div class="col-lg-6 text-center mt-4 mt-lg-0">
+        <div class="rounded-circle">
+          <img
+            src="data:image/jpeg;base64,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"
+            class="rounded-circle img-fluid " alt="Profile" width="300" height="300">
+        </div>
+      </div>
+  </section>
+
+
+  <!--second part-->
+  <!--card sectiom-->
+  <section class="my-5">
+    <!--second title-->
+    <div class="text-center mb-5">
+      <p class="text-danger fw-bold">Our services</p>
+      <h2 class="fw-bold">We provide great service for our <br>customer based our needs</h2>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/044.webp" class="card-img-top" alt="Skyscrapers" />
+          <div class="card-body">
+            <h5 class="card-title">Australia</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, dolores.
+              This is a wider card with supporting text below as a natural lead-in to
+              additional content. This content is a little bit longer.
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/043.webp" class="card-img-top"
+            alt="Los Angeles Skyscrapers" />
+          <div class="card-body">
+            <h5 class="card-title">America</h5>
+            <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dolor distinctio
+              sed quasi, ipsa cum.This card has supporting text below as a natural lead-in to additional content.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/042.webp" class="card-img-top"
+            alt="Palm Springs Road" />
+          <div class="card-body">
+            <h5 class="card-title">Russia</h5>
+            <p class="card-text">
+              This is a wider card with supporting text below as a natural lead-in to
+              additional content. This card has even longer content than the first to show
+              that equal height action.
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!--about section-->
+  <!--about-->
+
+
+  <!--testingmonail-->
+  <table class="table align-middle mb-0 bg-white mt-4 ms-auto mx-auto ">
+    <thead class="bg-light">
+      <tr>
+        <th>Name</th>
+        <th>Title</th>
+        <th>Status</th>
+        <th>Position</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <div class="d-flex align-items-center">
+            <img src="https://mdbootstrap.com/img/new/avatars/8.jpg" alt="" style="width: 45px; height: 45px"
+              class="rounded-circle" />
+            <div class="ms-3">
+              <p class="fw-bold mb-1">John Doe</p>
+              <p class="text-muted mb-0">john.doe@gmail.com</p>
+            </div>
+          </div>
+        </td>
+        <td>
+          <p class="fw-normal mb-1">Software engineer</p>
+          <p class="text-muted mb-0">IT department</p>
+        </td>
+        <td>
+          <span class="badge badge-success rounded-pill d-inline text-muted">Active</span>
+        </td>
+        <td>Senior</td>
+        <td>
+          <button type="button" class="btn btn-link text-decoration-none btn-sm btn-rounded">
+            Edit
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="d-flex align-items-center">
+            <img src="https://mdbootstrap.com/img/new/avatars/6.jpg" class="rounded-circle" alt=""
+              style="width: 45px; height: 45px" />
+            <div class="ms-3">
+              <p class="fw-bold mb-1">Alex Ray</p>
+              <p class="text-muted mb-0">alex.ray@gmail.com</p>
+            </div>
+          </div>
+        </td>
+        <td>
+          <p class="fw-normal mb-1">Consultant</p>
+          <p class="text-muted mb-0">Finance</p>
+        </td>
+        <td>
+          <span class="badge badge-primary rounded-pill d-inline text-muted">Onboarding</span>
+        </td>
+        <td>Junior</td>
+        <td>
+          <button type="button" class="btn btn-link btn-rounded btn-sm text-decoration-none"
+            data-mdb-ripple-color="dark">
+            Edit
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="d-flex align-items-center">
+            <img src="https://mdbootstrap.com/img/new/avatars/7.jpg" class="rounded-circle" alt=""
+              style="width: 45px; height: 45px" />
+            <div class="ms-3">
+              <p class="fw-bold mb-1">Kate Hunington</p>
+              <p class="text-muted mb-0">kate.hunington@gmail.com</p>
+            </div>
+          </div>
+        </td>
+        <td>
+          <p class="fw-normal mb-1">Designer</p>
+          <p class="text-muted mb-0">UI/UX</p>
+        </td>
+        <td>
+          <span class="badge badge-warning rounded-pill d-inline text-muted">Awaiting</span>
+        </td>
+        <td>Senior</td>
+        <td>
+          <button type="button" class="btn btn-link btn-rounded btn-sm text-decoration-none"
+            data-mdb-ripple-color="dark">
+            Edit
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <!--third-part-->
+  <div class=" story-section">
+    <div class="d-flex row g-5 align-items-center">
+      <!--left-coloum-->
+      <div class="col-lg-6  ">
+        <p class="text-danger fw-bold"> Our story</p>
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, sed</h2>
+        <div class="mt-2 ">
+          <img class="img-thumbnail rounded "
+            src="https://plus.unsplash.com/premium_photo-1661758211006-d41106e4be4d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YnVzaW5lc3N8ZW58MHx8MHx8fDA%3D"
+            alt="man-image">
+
+        </div>
+      </div>
+
+      <!--right coloum-->
+      <div class="col-lg-6">
+
+        <!--image row-->
+        <div class="">
+          <img class="img-thumbnail rounded"
+            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGJ1c2luZXNzfGVufDB8fDB8fHww"
+            alt="img 22">
+        </div>
+        <!--text-both-->
+        <div class="mt-5 ">
+          <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit Reiciendis nostrum dignissimos fugit sequi nulla
+            dolor quod modi officia ipsa dolorum!</h4>
+        </div>
+      </div>
+
+    </div>
+    <!--statss-->
+    <div class="row text-center stats mt-5">
+      <div class="col-md-4">
+        <h3>1M+</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, error.</p>
+      </div>
+
+
+      <div class="col-md-4">
+        <h3>92%</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, error.</p>
+      </div>
+
+
+
+      <div class="col-md-4">
+        <h3>4.9/5.0</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, error.</p>
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+
+<!--informatiom
+-->
+<div class=" container "> 
+  <section>
+    <h3 class="bg-body-tertiary p-2 border-top fw-bold text-center">Marketing team</h3>
+
+<ul class="list-group list-group-light mb-4">
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    <div class="d-flex align-items-center">
+      <img src="https://mdbootstrap.com/img/new/avatars/8.jpg" alt="" style="width: 45px; height: 45px"
+        class="rounded-circle" />
+      <div class="ms-3">
+        <p class="fw-bold mb-1">John Doe</p>
+        <p class="text-muted mb-0">john.doe@gmail.com</p>
+      </div>
+    </div>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    <div class="d-flex align-items-center">
+      <img src="https://mdbootstrap.com/img/new/avatars/6.jpg" class="rounded-circle" alt=""
+        style="width: 45px; height: 45px" />
+      <div class="ms-3">
+        <p class="fw-bold mb-1">Alex Ray</p>
+        <p class="text-muted mb-0">alex.ray@gmail.com</p>
+      </div>
+    </div>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    <div class="d-flex align-items-center">
+      <img src="https://mdbootstrap.com/img/new/avatars/7.jpg" class="rounded-circle" alt=""
+        style="width: 45px; height: 45px" />
+      <div class="ms-3">
+        <p class="fw-bold mb-1">Kate Hunington</p>
+        <p class="text-muted mb-0">kate.hunington@gmail.com</p>
+      </div>
+    </div>
+  </li>
+</ul>
+
+<h2 class="bg-body-tertiary   fw-bold border-bottom text-center">Design team</h2>
+
+<ul class="list-group list-group-light">
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    <div class="d-flex align-items-center">
+      <img src="https://mdbootstrap.com/img/new/avatars/9.jpg" alt="" style="width: 45px; height: 45px"
+        class="rounded-circle" />
+      <div class="ms-3">
+        <p class="fw-bold mb-1">Soraya Letto</p>
+        <p class="text-muted mb-0">soraya.letto@gmail.com</p>
+      </div>
+    </div>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    <div class="d-flex align-items-center">
+      <img src="https://mdbootstrap.com/img/new/avatars/11.jpg" class="rounded-circle" alt=""
+        style="width: 45px; height: 45px" />
+      <div class="ms-3">
+        <p class="fw-bold mb-1">Zeynep Dudley</p>
+        <p class="text-muted mb-0">zeynep.dudley@gmail.com</p>
+      </div>
+    </div>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    <div class="d-flex align-items-center">
+      <img src="https://mdbootstrap.com/img/new/avatars/15.jpg" class="rounded-circle" alt=""
+        style="width: 45px; height: 45px" />
+      <div class="ms-3">
+        <p class="fw-bold mb-1">Ayat Black</p>
+        <p class="text-muted mb-0">ayat.black@gmail.com</p>
+      </div>
+    </div>
+  </li>
+</ul>
+  </section>
+</div>
+
+<!---call me-->
+ <div class="container mt-5">
+  <section>
+    <section class="mb-5 ">
+  <div class="row gx-lg-5">
+    <div class="col-lg-6 mb-5">
+      <div class="d-flex align-items-start">
+        <div class="flex-shrink-0">
+          <div class="p-3 badge-primary rounded-4">
+            <i class="fas fa-cloud-upload-alt fa-lg text-primary fa-fw"></i>
+          </div>
+        </div>
+        <div class="flex-grow-1 ms-4">
+          <p class="fw-bold mb-1">Tutorials</p>
+          <p class="text-muted mb-1">
+            Dozens of free tutorials to help you discover the full potential of MDB.
+          </p>
+          <small><a href="">Learn more</a></small>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-6 mb-5">
+      <div class="d-flex align-items-start">
+        <div class="flex-shrink-0">
+          <div class="p-3 badge-primary rounded-4">
+            <i class="fas fa-database fa-lg text-primary fa-fw"></i>
+          </div>
+        </div>
+        <div class="flex-grow-1 ms-4">
+          <p class="fw-bold mb-1">Integrations</p>
+          <p class="text-muted mb-1">
+            MDB is integrated with all major technologies and tools.
+          </p>
+          <small><a href="">Learn more</a></small>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-6 mb-5">
+      <div class="d-flex align-items-start">
+        <div class="flex-shrink-0">
+          <div class="p-3 badge-primary rounded-4">
+            <i class="fas fa-stream fa-lg text-primary fa-fw"></i>
+          </div>
+        </div>
+        <div class="flex-grow-1 ms-4">
+          <p class="fw-bold mb-1">Backend friendly</p>
+          <p class="text-muted mb-1">
+            MDB is designed to be seamlessly integrated and used with the backend.
+          </p>
+          <small><a href="">Learn more</a></small>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-6 mb-5">
+      <div class="d-flex align-items-start">
+        <div class="flex-shrink-0">
+          <div class="p-3 badge-primary rounded-4">
+            <i class="fas fa-copy fa-lg text-primary fa-fw"></i>
+          </div>
+        </div>
+        <div class="flex-grow-1 ms-4">
+          <p class="fw-bold mb-1">Support and community</p>
+          <p class="text-muted mb-1">
+            The MDB team and our global community are there to support you.
+          </p>
+          <small><a href="">Learn more</a></small>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+  </section>
+ </div>
+<!--footer-->
+<!-- Footer -->
+<footer class=" container text-center text-lg-start bg-body-tertiary text-muted">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>brainwave.io
+          </h6>
+          <p>
+            Here you can use rows and columns to organize your footer content. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Angular</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">React</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Vue</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Laravel</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            info@example.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+          <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">krishrawal.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+</body>
+<!--botstrap-script--->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+</html>
